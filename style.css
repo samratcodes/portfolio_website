@@ -1,5 +1,5 @@
 body{
-    margin: 20px;
+    margin: 20px 0px;
     background-color: #eaf2ff;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -7,8 +7,9 @@ body{
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 0px 3px 0px;
+    margin-bottom:20px;
 }
 .nav_link{
     padding: 10px 10px;
@@ -49,7 +50,6 @@ header{
 }
 main{
     color: azure;
-   
     display: flex;
 }
 .main-text-top{
@@ -81,10 +81,142 @@ main{
     border: solid 1px rgb(255, 255, 255);
     text-align: center;
     border-radius:20px ;
-    width: 20%;
+    width: max-content;
+    transition: 500ms;
+    padding: 10px;
 }
 .ViewMore:hover{
   color: black ;
   background-color:rgb(255, 255, 255) ;
-  transition: 1s;
+  transform: scale(0.95);
+  transition: 500ms;
+}
+.skills{
+    margin-top: 10px;
+    font-size: 130%;
+    width: 20%;
+    text-align: center; 
+  text-decoration: white 3px underline;
+}
+.skills-list{
+    font-size: large;
+    padding: 10px;
+}
+.skills-box{
+    color:rgb(42, 40, 40); 
+    background-color:#eaf2ff  ;
+    margin: 50px 10px 10px 10px;
+    border: 1px solid #a2a5a9;
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px;
+    transition: 1s;
+}
+.skills-box:hover{
+    border: 1px solid #d1d2d4;
+    color:  #eaf2ff ;
+    background-color:rgb(42, 40, 40); 
+    transition: 1s;
+    transform: scale(1.2);
+}
+.outerSkillsBox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.CertificationsCard{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.certifications{
+    margin-top: 10px;
+    font-size: 130%;
+    width: 20%;
+    text-align: center; 
+  text-decoration: white 3px underline;
+}
+.certificationsLists{
+    font-size: large;
+    padding: 10px;
+}
+.CertificationsBox{
+    color:rgb(42, 40, 40); 
+    background-color:#eaf2ff  ;
+    margin: 50px 10px 10px 10px;
+    border: 1px solid #a2a5a9;
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px;
+    transition: 1s;
+}
+.CertificationsBox:hover{
+    border: 1px solid #d1d2d4;
+    color:  #eaf2ff ;
+    background-color:rgb(42, 40, 40); 
+    transition: 1s;
+    transform: scale(1.2);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.end{
+    margin: 20px;
+    font-size: medium;
+}
+.services_card{
+    margin: 40px auto ;
+    border: solid 4px rgb(71, 69, 69);
+    color: rgb(142, 195, 242);
+    display: flex;
+    flex-direction: column;
+    border-radius:20px ;
+    transition: 400ms;
+    background-color:rgb(3, 26, 48) ;
+}
+.services_card:hover{
+    border:solid 4px #eaf2ff;
+    transform: scale(1.1);
+}
+.works{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    color: azure;
+}
+.services{
+    font-size: medium;
+    margin: 8px;
+}
+.services:hover{
+    color: burlywood;
+}
+/* Responsiveness */
+@media only screen and (max-width: 700px){
+.social{
+    display: none;
+}
+main{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+}
+.ViewMore{
+    width: min-content;
+    padding: 10px;
+}
+.content-section{
+    background-color: black;
+    padding: 10px;}
+    .portfolio-image{
+        width: 60%;
+    }
+
+    .portfolio-image:hover{ 
+        background-color: black;
+        transition:3s;
+       
+    }
 }
