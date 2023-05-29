@@ -30,20 +30,7 @@ header{
     color: black;
     padding: 4px;
 }
-.logo{
-    font-size:large;
-    color: rgb(240, 240, 240);
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    padding: 20px;
-    margin-left: 20px;
-}
-.logo:hover{
-    color:rgb(0, 0, 0) ;
-    background-color: #eaf2ff;
-    border-radius: 1px;
-    transition: 400ms;
-}
+
 .content-section{
     background-color: black;
     padding: 100px;
@@ -62,14 +49,14 @@ main{
     transition: 30s;
 }
 .portfolio-image:hover{ 
-    background-color: black;
+    background-color: rgb(202, 195, 195);
     transform: rotate(10deg);
-    transition:3s;
+    transition:1s;
 }
 .portfolio-image{ 
     display: flex;
     justify-content: center;
-  background-color: azure;
+  background-color: rgb(255, 255, 255);
   transition: 500ms;
   border-radius: 50px;
 }

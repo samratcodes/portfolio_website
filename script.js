@@ -17,7 +17,7 @@ viewMore.addEventListener('click',(event) => {
   Services_card.className='services_card'
   const work= document.createElement('div')
  work.className='works'
- work.innerText='What i can do for you:'
+ work.innerText='What I can do for you:'
  Services_card.appendChild(work)
  const unordered_list=document.createElement('ul')
  services.forEach((info)=>{
